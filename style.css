@@ -63,7 +63,7 @@ img {
   text-decoration: none;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .links {
     flex-direction: column;
   }
