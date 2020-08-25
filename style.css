@@ -32,7 +32,6 @@ hr {
   height: 1px;
   color: #ffedea;
   background-color: #ffedea;
-  width: fit-content;
 }
 
 #about {
@@ -61,7 +60,6 @@ hr {
   display: flex;
   width: 1000px;
   justify-content: space-around;
-  /* align-items: space-around; */
   align-self: center;
 }
 #lower-half div {
