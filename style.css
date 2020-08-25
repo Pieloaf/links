@@ -47,7 +47,6 @@ hr {
   justify-content: flex-start;
 }
 #pfp {
-  width: 400px;
   display: flex;
 }
 #pfp img {
