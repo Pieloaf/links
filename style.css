@@ -47,6 +47,7 @@ hr {
   justify-content: flex-start;
 }
 #pfp {
+  width: 400px;
   display: flex;
 }
 #pfp img {
@@ -94,7 +95,6 @@ hr {
   background-color: rgb(43, 59, 73);
   overflow-y: scroll;
   height: 500px;
-  width: 400px;
   display: flex;
   flex-direction: column;
 }
