@@ -51,7 +51,7 @@ hr {
   display: flex;
 }
 #pfp img {
-  width: fit-content;
+  width: 400px;
   justify-self: center;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
   margin: 1pc;
@@ -104,6 +104,7 @@ hr {
   margin: 2px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   transition: 0.4s;
+  width: 400px;
 }
 
 #about-card {
