@@ -4,10 +4,6 @@
   font-family: "Source Code Pro", monospace;
 }
 
-.content::-webkit-scrollbar {
-  /* This is the magic bit */
-  display: none;
-}
 html,
 body {
   margin: 0;
@@ -47,16 +43,23 @@ hr {
 }
 #pfp {
   width: 400px;
-  display: flex;
 }
 #pfp img {
   width: 400px;
-  justify-self: center;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
   margin: 1pc;
+  border-radius: 5px;
 }
 
-#lower-half {
+#video,
+#discord div,
+#creations div {
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+#lower-half,
+#mid {
   display: flex;
   width: 1000px;
   justify-content: space-around;
@@ -65,15 +68,18 @@ hr {
 #lower-half div {
   display: flex;
   flex-direction: column;
-  margin-top: -10px;
   margin-bottom: 10px;
 }
-
-#lower-half div h2 {
+#mid {
   display: flex;
+  flex-direction: column;
+  margin-top: -30px;
+  align-items: center;
+}
+
+h2 {
   font-size: xx-large;
   font-weight: 700;
-  align-self: center;
   color: #ffedea;
 }
 
@@ -86,6 +92,13 @@ hr {
   background: #222e3ad2;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+}
+
+#discord,
+#creations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #images {
@@ -107,8 +120,10 @@ hr {
 #about-card {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   width: 1000px;
   align-self: center;
+  align-items: center;
   padding: 10px;
   margin: 60px;
   border: 0px solid;
@@ -118,8 +133,7 @@ hr {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-#about-card,
-#links {
+#about-card #links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -159,12 +173,10 @@ hr {
   color: #faebec;
   text-decoration: none;
 }
-/* 
-@media screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .links {
+
+@media screen and (min-device-width: 375px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  #about-card,
+  #lower-half {
     flex-direction: column;
   }
-  .link {
-    font-size: 100px;
-  }
-} */
+}
