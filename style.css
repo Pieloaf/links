@@ -11,7 +11,7 @@ body {
 }
 
 #base {
-  min-width: 900px;
+  /* min-width: 900px; */
   display: flex;
   flex-direction: column;
 }
@@ -38,16 +38,21 @@ hr {
 }
 
 #info {
+  margin-right: 30px;
+  padding-left: 30px;
   width: 500px;
   justify-content: flex-start;
 }
 #pfp {
   width: 400px;
+  align-self: center;
+  display: flex;
+  margin-left: 20px;
 }
 #pfp img {
   width: 400px;
   box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
-  margin: 1pc;
+  margin: 10px;
   border-radius: 5px;
 }
 
@@ -121,7 +126,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 1000px;
+  width: auto;
   align-self: center;
   align-items: center;
   padding: 10px;
@@ -133,7 +138,7 @@ h2 {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-#about-card #links {
+#links {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -174,9 +179,12 @@ h2 {
   text-decoration: none;
 }
 
-@media screen and (min-device-width: 375px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media (max-width: 1200px) {
   #about-card,
   #lower-half {
     flex-direction: column;
+  }
+  #pfp {
+    margin-left: 0px;
   }
 }
